@@ -4,7 +4,9 @@
   "description": "A node + raspberry pi project to automate pumping water from the tank and eventually feeding the fish",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "",
+    "prestart": "rimraf ./dist && tsc",
+    "start": "node ./dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "@types/cron": "^1.0.30",
     "@types/express": "^4.0.34",
+    "rimraf": "^2.5.4",
     "typescript": "^2.0.10"
   }
 }
