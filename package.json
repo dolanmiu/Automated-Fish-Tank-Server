@@ -23,9 +23,11 @@
   },
   "homepage": "https://github.com/dolanmiu/Automated-Fish-Task-Server#readme",
   "dependencies": {
+    "cron": "^1.1.1",
     "express": "^4.14.0"
   },
   "devDependencies": {
+    "@types/cron": "^1.0.30",
     "@types/express": "^4.0.34",
     "typescript": "^2.0.10"
   }
