@@ -1,2 +1,3 @@
-# Automated-Fish-Task-Server
-A node + raspberry pi project to automate pumping water from the tank and eventually feeding the fish
+# Automated-Fish-Tank-Server
+
+> A node + raspberry pi project to automate pumping water from the tank and eventually feeding the fish
