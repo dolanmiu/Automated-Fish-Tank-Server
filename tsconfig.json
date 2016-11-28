@@ -5,7 +5,7 @@
     "noImplicitAny": true,
     "sourceMap": false,
     "outDir": "./dist",
-    "declaration": true,
+    "declaration": false,
     "rootDir": "./src"
   },
   "exclude": [

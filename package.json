@@ -25,8 +25,18 @@
   },
   "homepage": "https://github.com/dolanmiu/Automated-Fish-Task-Server#readme",
   "dependencies": {
+    "@types/body-parser": "0.0.33",
+    "@types/compression": "0.0.33",
+    "@types/cors": "0.0.33",
+    "@types/morgan": "^1.7.32",
+    "@types/winston": "0.0.32",
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
     "cron": "^1.1.1",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "winston": "^2.3.0"
   },
   "devDependencies": {
     "@types/cron": "^1.0.30",
