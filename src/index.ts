@@ -3,6 +3,7 @@ import { ApplicationWrapper } from "./bootstrap/application-wrapper";
 import { IConfig, ProductionConfig } from "./config/index";
 import * as cors from "cors";
 import * as logger from "winston";
+import { WaterExchangeSchedule } from "./schedule";
 
 let config: IConfig = new ProductionConfig();
 
@@ -15,6 +16,9 @@ appWrapper.configure(app => {
 });
 
 appWrapper.start();
+
+let scheduler = new WaterExchangeSchedule();
+scheduler.Start();
 
 process.on("SIGTERM", () => {
     logger.info("Gracefully terminating");
