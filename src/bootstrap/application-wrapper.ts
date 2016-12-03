@@ -19,7 +19,7 @@ export class ApplicationWrapper {
         this.app.use(bodyParser.json());
 
         this.app.use(morgan("dev"));
-        this.app.use(express.static(this.app.get("appPath")));
+        // this.app.use(express.static(this.app.get("appPath")));
 
         this.app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
             if (err) {

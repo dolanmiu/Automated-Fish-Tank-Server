@@ -8,7 +8,7 @@ export class WaterExchangeSchedule {
         this.job = new CronJob({
             cronTime: "* * * * * *",
             onTick: () => {
-                console.log("Opening Door");
+                console.log("Clearing out tank with pump");
             },
             onComplete: () => {
             }
